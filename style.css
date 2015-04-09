@@ -69,7 +69,8 @@
     margin-top: 20px;
     margin-left: 20px;
     margin-right: 20px;
-    border: 1px dashed #878484;
+    border-top: 1px dashed #878484;
+    border-bottom: 1px dashed #878484;
 }
 
 .sidebarContent{

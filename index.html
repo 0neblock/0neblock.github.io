@@ -14,6 +14,7 @@
                     if(!isFloating){
                         $("#start").find(".heading").css("position", "fixed");
                         $("#start").find(".heading").css("top", 10);
+                        $("#start").find(".heading").css("width", $("#start").css("width"));
                         $("#start").find(".articleContent").css("margin-top", "48px");
                         $("#start").find(".heading").css("-webkit-box-shadow", "5px 5px 1px -5px rgba(0,0,0,0.61)");
                         $("#start").find(".heading").css("-mox-box-shadow", "5px 5px 1px -5px rgba(0,0,0,0.61)");
@@ -25,6 +26,7 @@
                       
                         $("#start").find(".heading").css("position", "static");
                         $("#start").find(".heading").css("top", "auto");
+                        $("#start").find(".heading").css("width", "auto");
                         $("#start").find(".articleContent").css("margin-top", "0px");
                         $("#start").find(".heading").css("-webkit-box-shadow", "none");
                         $("#start").find(".heading").css("-mox-box-shadow", "none");
