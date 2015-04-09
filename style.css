@@ -49,6 +49,10 @@
     height: 32px;
 }
 
+.heading .icons{
+    display: none;
+}
+
 .content{
     margin-top: 40px;
     margin-left: auto;
@@ -60,7 +64,7 @@
 
 .articleContent{
     padding: 10px;
-    line-height: 16pt
+    line-height: 16pt;
 }
 
 .hr{
@@ -86,13 +90,14 @@
     font-size: 20px;
 }
 
-.heading span{
-    
+.article{
+    margin-top: 50px;
 }
 
-.article{
-    margin-bottom: 50px;
+#article0{
+    margin-top: 0px;
 }
+
 .sidebar{
     padding: 25px;
     background-color: #F3EEEE;
@@ -122,5 +127,8 @@
     .content{
         padding-left: 20px;
         padding-right: 20px;
+    }
+    .sidebar{
+        margin-top: 50px;
     }
 }
