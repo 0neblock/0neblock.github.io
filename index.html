@@ -35,6 +35,10 @@
                     }
                 }
             }, 10);
+            
+            $(window).on("orientationchange",function(){
+              isFloating = false;
+            });
         });
         
     </script>
