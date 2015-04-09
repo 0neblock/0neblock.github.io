@@ -8,18 +8,24 @@
     <script>
         $(function(){
             var target = $("#start").offset().top;
+            var isFloating = false;
             var interval = setInterval(function() {
                 if ($(window).scrollTop() >= target) {
+                    if(!isFloating){
                     $("#start").find(".heading").css("position", "fixed");
-                    $("#start").find(".heading").css("top", 0);
-                    $("#start").find(".articleContent").css("margin-top", "45px");
+                    $("#start").find(".heading").css("top", 10);
                     
+                    $("#start").find(".articleContent").css("margin-top", "45px");
+                        isFloating = true;
+                    }
                 } else if($(window).scrollTop() < target){
-                    $("#start").find(".heading").css("position", "static");
+                   if(isFloating){ $("#start").find(".heading").css("position", "static");
                     $("#start").find(".heading").css("top", "auto");
                     $("#start").find(".articleContent").css("margin-top", "0px");
+                                  isFloating = false;
+                                 }
                 }
-            }, 100);
+            }, 50);
         });
         
     </script>
@@ -50,7 +56,7 @@
                 
                 <div class="col-xs-12 col-sm-8">
                     <div class="article" id="start">
-                    <div class="heading">News</div>
+                    <div class="heading">Article Title</div>
                         <div class="articleContent">
                             <div class="media">
                                 <div class="media-body">
