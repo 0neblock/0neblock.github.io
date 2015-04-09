@@ -7,10 +7,10 @@
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
     <script>
         $(function(){
-            var target = $("#start").offset().top;
+            var target = 162;
             var isFloating = false;
             var interval = setInterval(function() {
-                if (162 >= target - 10) {
+                if ($(window).scrollTop() >= target - 10) {
                     if(!isFloating){
                         $("#start").find(".heading").css("position", "fixed");
                         $("#start").find(".heading").css("top", 10);
@@ -20,7 +20,7 @@
                         $("#start").find(".heading").css("box-shadow", "5px 5px 1px -5px rgba(0,0,0,0.61)");
                         isFloating = true;
                     }
-                } else if(162 < target - 10){
+                } else if($(window).scrollTop() < target - 10){
                    if(isFloating){
                       
                         $("#start").find(".heading").css("position", "static");
@@ -56,7 +56,7 @@
         <div class="icons">
             <a href="#"><img src="img/facebook.png" /></a>
             <a href="#"><img src="img/tumblr.png" /></a>
-            <a href="#"><img src="img/twitter.png" /></a>
+            <a href="#"><img src="img/youtube.png" /></a>
                 </div>
         <div class="container">
             <div class="row">
