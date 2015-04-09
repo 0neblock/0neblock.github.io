@@ -15,6 +15,9 @@
                         $("#start").find(".heading").css("position", "fixed");
                         $("#start").find(".heading").css("top", 10);
                         $("#start").find(".articleContent").css("margin-top", "48px");
+                        $("#start").find(".heading").css("-webkit-box-shadow", "5px 5px 1px -5px rgba(0,0,0,0.61)");
+                        $("#start").find(".heading").css("-mox-box-shadow", "5px 5px 1px -5px rgba(0,0,0,0.61)");
+                        $("#start").find(".heading").css("box-shadow", "5px 5px 1px -5px rgba(0,0,0,0.61)");
                         isFloating = true;
                     }
                 } else if($(window).scrollTop() < target - 10){
@@ -23,6 +26,9 @@
                         $("#start").find(".heading").css("position", "static");
                         $("#start").find(".heading").css("top", "auto");
                         $("#start").find(".articleContent").css("margin-top", "0px");
+                        $("#start").find(".heading").css("-webkit-box-shadow", "none");
+                        $("#start").find(".heading").css("-mox-box-shadow", "none");
+                        $("#start").find(".heading").css("box-shadow", "none");
                         isFloating = false;
                     }
                 }
@@ -48,9 +54,9 @@
         <span>Sick Blog</span>    
         </div>
         <div class="icons">
-                    <img src="img/facebook.png" />
-                    <img src="img/tumblr.png" />
-                    <img src="img/twitter.png" />
+            <a href="#"><img src="img/facebook.png" /></a>
+            <a href="#"><img src="img/tumblr.png" /></a>
+            <a href="#"><img src="img/twitter.png" /></a>
                 </div>
         <div class="container">
             <div class="row">
