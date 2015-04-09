@@ -12,6 +12,7 @@
             var interval = setInterval(function() {
                 if ($(window).scrollTop() >= target - 10) {
                     if(!isFloating){
+                        alert("target: " + target + ". Window: " + $(window).scrollTop());
                         $("#start").find(".heading").css("position", "fixed");
                         $("#start").find(".heading").css("top", 10);
                         $("#start").find(".articleContent").css("margin-top", "45px");
