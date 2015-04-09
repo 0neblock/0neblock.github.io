@@ -7,23 +7,24 @@
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
     <script>
         $(function(){
-            var target = $("#start").offset().top;
+            var target = $("#start").offset().top - 10;
             var isFloating = false;
             var interval = setInterval(function() {
                 if ($(window).scrollTop() >= target) {
                     if(!isFloating){
-                    $("#start").find(".heading").css("position", "fixed");
-                    $("#start").find(".heading").css("top", 10);
-                    
-                    $("#start").find(".articleContent").css("margin-top", "45px");
+                        $("#start").find(".heading").css("position", "fixed");
+                        $("#start").find(".heading").css("top", 10);
+                        $("#start").find(".articleContent").css("margin-top", "45px");
                         isFloating = true;
                     }
                 } else if($(window).scrollTop() < target){
-                   if(isFloating){ $("#start").find(".heading").css("position", "static");
-                    $("#start").find(".heading").css("top", "auto");
-                    $("#start").find(".articleContent").css("margin-top", "0px");
-                                  isFloating = false;
-                                 }
+                   if(isFloating){
+                      
+                        $("#start").find(".heading").css("position", "static");
+                        $("#start").find(".heading").css("top", "auto");
+                        $("#start").find(".articleContent").css("margin-top", "0px");
+                        isFloating = false;
+                    }
                 }
             }, 50);
         });
