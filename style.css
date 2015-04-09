@@ -65,9 +65,13 @@
     
 }
 
+.article{
+    margin-bottom: 50px;
+}
 .sidebar{
     padding: 25px;
     background-color: #F3EEEE;
+    margin-bottom: 20px;
 }
 .sidebar .heading{
     font-size: 15px;
