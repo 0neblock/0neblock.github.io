@@ -10,9 +10,8 @@
             var target = $("#start").offset().top;
             var isFloating = false;
             var interval = setInterval(function() {
-                if ($(window).scrollTop() >= target - 10) {
+                if (162 >= target - 10) {
                     if(!isFloating){
-                        alert(target + " " + $(window).scrollTop());
                         $("#start").find(".heading").css("position", "fixed");
                         $("#start").find(".heading").css("top", 10);
                         $("#start").find(".articleContent").css("margin-top", "48px");
@@ -21,7 +20,7 @@
                         $("#start").find(".heading").css("box-shadow", "5px 5px 1px -5px rgba(0,0,0,0.61)");
                         isFloating = true;
                     }
-                } else if($(window).scrollTop() < target - 10){
+                } else if(162 < target - 10){
                    if(isFloating){
                       
                         $("#start").find(".heading").css("position", "static");
